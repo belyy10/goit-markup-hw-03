@@ -81,11 +81,11 @@ img {
 }
 .header .logo {
     margin-right: 93px;
-    margin-top: 25px;
-    margin-bottom: 24px;
+   
 }
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 .header .container {
 display: flex;
@@ -110,13 +110,16 @@ align-items: center;
     display: flex;
     list-style: none;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
-
+.header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
+}
 .header-connect {
     margin-left: auto;
 }
@@ -132,13 +135,10 @@ align-items: center;
 
 
 /* ---------------------HERO--------------------- */
-.hero .container
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
+.hero .container {
+    text-align: center;
+}
 
 .hero {
     background-color: #2F303A;
@@ -155,7 +155,10 @@ letter-spacing: 0.06em;
 color: var(--primary-white-color);
 max-width: 600px;
 margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
 }
+
 .hero-btn {
     background-color: var(--accent-color);
     width: 200px;
@@ -169,6 +172,7 @@ margin-bottom: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+
 }
 /* -----------\----------ABOUT--------------------- */
 .about { 
@@ -270,7 +274,9 @@ display: flex;
 
 
 .footer .logo {
-    color: var(--primary-white-color);
+    color: var(--primary-white-color); 
+    margin-bottom: 20px;
+    display: block;
 }
 
 .footer-item:hover,
@@ -280,8 +286,7 @@ display: flex;
 
 
 .footer-adress {
-    font-style: normal;
-    margin-top: 20px;
+    font-style: normal;  
 }
 
 .footer-street {
@@ -302,11 +307,13 @@ color: var(--primary-white-color);
 }
 /* ---------------------SECOND PAGE--------------------- */
 /* ---------------------MENU--------------------- */
+
 .menu-btn:hover, .menu-btn:focus
 {
 color:var(--primary-white-color) ;
 background-color: var(--accent-color)
 }
+
 .menu-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -353,9 +360,6 @@ margin-right: 30px;
 margin-bottom: 30px;
 border: 1px solid #EEEEEE;
 }
-.portfolio-img {
-    margin-bottom: 20px;
-}
 
 .portfolio-item-title {
     font-size: 18px;
@@ -369,9 +373,7 @@ border: 1px solid #EEEEEE;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
 }
-.portfolio-item-title, .portfolio-item-text {
-    margin-left: 24px;
-    margin-right: 24px;
+.portfolio-description{
+    padding: 24px 20px;
 }
